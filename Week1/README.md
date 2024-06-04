@@ -14,12 +14,14 @@
 <h2>This function takes five arguments:</h2>
 <ol>
   <li>length: An integer representing the desired password length.
-    <li>use_uppercase (optional, default=True): A Boolean value indicating whether to include uppercase letters in the password.</li>
+    <ul>
+      <li>use_uppercase (optional, default=True): A Boolean value indicating whether to include uppercase letters in the password.</li>
     <li>use_lowercase (optional, default=True): A Boolean value indicating whether to include lowercase letters in the password.</li>
     <li>use_digits (optional, default=True): A Boolean value indicating whether to include digits in the password.</li>
     <li>use_special (optional, default=True): A Boolean value indicating whether to include special characters in the password.</li>
     <li>The function first defines an empty string characters to store the character sets based on user preferences.</li>
     <li>It then checks each optional argument and appends the corresponding character set from the string module to characters:</li>
+    </ul>
   </li>
   
   <li>use_uppercase: Appends uppercase letters (string.ascii_uppercase).</li>
