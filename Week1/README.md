@@ -12,22 +12,23 @@
 
 
 <h2>This function takes five arguments:</h2>
-<ul>
-  <li>length: An integer representing the desired password length.</li>
-  <li>use_uppercase (optional, default=True): A Boolean value indicating whether to include uppercase letters in the password.</li>
-  <li>use_lowercase (optional, default=True): A Boolean value indicating whether to include lowercase letters in the password.</li>
-  <li>use_digits (optional, default=True): A Boolean value indicating whether to include digits in the password.</li>
-  <li>use_special (optional, default=True): A Boolean value indicating whether to include special characters in the password.</li>
-  <li>The function first defines an empty string characters to store the character sets based on user preferences.</li>
-  <li>It then checks each optional argument and appends the corresponding character set from the string module to characters:</li>
+<ol>
+  <li>length: An integer representing the desired password length.
+    <li>use_uppercase (optional, default=True): A Boolean value indicating whether to include uppercase letters in the password.</li>
+    <li>use_lowercase (optional, default=True): A Boolean value indicating whether to include lowercase letters in the password.</li>
+    <li>use_digits (optional, default=True): A Boolean value indicating whether to include digits in the password.</li>
+    <li>use_special (optional, default=True): A Boolean value indicating whether to include special characters in the password.</li>
+    <li>The function first defines an empty string characters to store the character sets based on user preferences.</li>
+    <li>It then checks each optional argument and appends the corresponding character set from the string module to characters:</li>
+  </li>
+  
   <li>use_uppercase: Appends uppercase letters (string.ascii_uppercase).</li>
   <li>use_lowercase: Appends lowercase letters (string.ascii_lowercase).</li>
   <li>use_digits: Appends digits (string.digits).</li>
   <li>use_special: Appends special characters (string.punctuation).</li>
+</ol>
   <li>A ValueError is raised if characters remains empty (no character types selected).</li>
   <li>The function uses a list comprehension to generate a random password of the specified length by repeatedly calling random.choice(characters) and joining the results into a string.</li>
-  <li></li>
-</ul>
 
 <p>Finally, the generated password is returned.</p>
 
